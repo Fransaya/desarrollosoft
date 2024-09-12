@@ -1,0 +1,34 @@
+clases definidas:
+- evento
+        . fecha inicio fecha fin
+        . turno: turno ( uno a muchos )
+        . cantidad personas 
+
+    - horarios
+        . hora inicio, hora fin
+
+    - turno
+        . fecha, hora
+        . nombre
+
+    - entrada
+        . evento:evento
+
+    - persona
+        . nombre y apellido
+        . tipo doc
+        . nro documento
+        . fecha nacimiento
+        . telefono
+
+
+    - usuario
+        . personar: persona
+        . rol usuario: rol Usuario
+        . estado
+        . alias
+        . password
+
+    - rol usuario
+        . tipoUsuario 
+        .
