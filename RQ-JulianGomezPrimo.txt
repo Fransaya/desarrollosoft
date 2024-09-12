@@ -1,0 +1,14 @@
+
+1- Administrar eventos:
+    1.1: Definir horarios
+    1.2: Definir precios   
+    1.4: Definir sala de evento
+    1.5: Definir cantidad de espectadores 
+
+2: Publicar evento :
+    2.1:ABM eventos
+
+3- Administrar socios : 
+    1.1 - ABM de socios / clientes. 
+    3.1 - Calcular total adeudado
+    3.1 - Mostrar estado de cuenta
