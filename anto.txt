@@ -31,4 +31,4 @@ clases definidas:
 
     - rol usuario
         . tipoUsuario 
-        .
+        . .
