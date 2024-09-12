@@ -1,0 +1,36 @@
+CLASES
+  
+    - publicacion
+        . evento: evento
+        . director: director
+        . fecha publicacion
+        . actores: actor
+        . pais de origen
+        . año realizacion
+
+    - tipo evento
+        . nombre
+        . descripcion
+    
+    - cuotas
+        . nro cuota
+        . valor 
+        + pagarCuota()
+        + caluclarMonto()
+    
+    - socio
+        . persona: persona
+        . cuota: cuota
+
+
+    - aporte mensual ( cuota que paga el cliente )
+        . socio: socio
+        . cuota:cuota
+        . estado
+
+    - boleto / entrada
+    - venta entrada
+    - detalle venta
+    - ticket
+    - tipo cliente
+
