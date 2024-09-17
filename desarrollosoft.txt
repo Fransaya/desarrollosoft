@@ -13,7 +13,8 @@ El boletero verifica si el cliente es socio solicitando su número de documento.
 para el evento solicitado. Si aún hay entradas disponibles, realiza el cobro y registra la venta, emitiendo un ticket y entregando las entradas al cliente.
 Si el cliente es socio y tiene sus cuotas al día, recibe un descuento del 5% en el valor total de las entradas. 
 
-Requerimientos funcionales del sistema Municipalidad:
+## Requerimientos funcionales del sistema Municipalidad:
+
 
 
 1- Administrar eventos:
