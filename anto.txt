@@ -1,11 +1,17 @@
 clases definidas:
 - evento
-        . fecha inicio fecha fin
+        . fechaInicio
+        . fechaFin
         . turno: turno ( uno a muchos )
-        . cantidad personas 
+        . cantidadPersonas 
+        ----------------------
+        crear()
+        modificar()
+        mostrar()
 
     - horarios
-        . hora inicio, hora fin
+        . horaInicio
+        . horaFin
 
     - turno
         . fecha, hora
@@ -13,17 +19,20 @@ clases definidas:
 
     - entrada
         . evento:evento
+        . precio
 
     - persona
-        . nombre y apellido
-        . tipo doc
-        . nro documento
-        . fecha nacimiento
+        . nombre
+        . apellido
+        . tipoDoc
+        . nroDocumento
+        . fechaNacimiento
         . telefono
+        . email
 
 
     - usuario
-        . personar: persona
+        . persona: persona
         . rol usuario: rol Usuario
         . estado
         . alias
@@ -32,3 +41,7 @@ clases definidas:
     - rol usuario
         . tipoUsuario 
         . .
+
+    - sesion
+       . fechaHoraInicio 
+       . fechaHoraFin
