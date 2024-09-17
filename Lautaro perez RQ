@@ -1,0 +1,9 @@
+4- Gestionar Cobros a Socios:
+    4.1: Registrar nuevos cobros a clientes 
+    4.2: Registrar cobros de cuotas a socios
+
+5- Gestionar Ventas de entradas a clientes y socios:
+    5.0 - verificar disponibilidad de entrada para el evento seleccionado
+    5.1 - Registrar nuevas ventas
+    5.2 - calcular porcentaje de descuento a socios
+    5.2 - verificar estado de cuenta de socio
