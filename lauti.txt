@@ -1,0 +1,31 @@
+
+- horario
+    . fecha
+    . horaInicio
+    . horaFin
+
+- paisOrigen
+    . nombre
+
+- ventaEntrada
+    . fechaVenta
+    . cliente:cliente
+    . total
+    + registrarVenta()
+    + conocerCliente()
+    + validarEstadoCliente()
+    + calcularTotal()
+
+- entrada
+    . evento:evento
+    . precio
+    + conocerEvento()
+
+- detalleVenta
+    . entrada:entrada
+    . cantidad
+    . descuento
+    . subtotal
+    + aplicarDescuento()
+    + conocerDisponibilidad()
+
