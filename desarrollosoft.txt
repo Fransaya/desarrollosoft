@@ -40,7 +40,12 @@ Si el cliente es socio y tiene sus cuotas al día, recibe un descuento del 5% en
     5.0 - verificar disponibilidad de entrada para el evento seleccionado
     5.1 - Registrar nuevas ventas
     5.2 - calcular porcentaje de descuento a socios
-    5.2 - verificar estado de cuenta de 
+    5.2 - verificar estado de cuenta de cliente
+
+    - REQUERIMIENTO:
+6- Gestion y Emisión de Reportes vinculados a los eventos realizados y ventas de entradas
+    6.1 - Registrar y Generar informes
+    6.2   Obtener informes
 
 
 ## Clases del sistema Municipalidad:

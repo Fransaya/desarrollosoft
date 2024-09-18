@@ -49,3 +49,8 @@ CLASES:
     + crearEstado()
     + modificarEstado()
 
+- REQUERIMIENTO:
+6- Gestion y Emisión de Reportes vinculados a los eventos realizados y ventas de entradas
+    6.1 - Registrar y Generar informes
+    6.2   Obtener informes
+
