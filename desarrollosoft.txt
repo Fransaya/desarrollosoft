@@ -228,3 +228,6 @@ Si el cliente es socio y tiene sus cuotas al día, recibe un descuento del 5% en
     +modificarPublicacion()
     +validarPublicacion()
     +conocerEvento()
+
+Patrones utilizados:
+Transacción - DetalleDeTransacción : Venta - DetalleDeVenta
