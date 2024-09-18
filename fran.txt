@@ -1,36 +1,51 @@
-CLASES
-  
-    - publicacion
-        . evento: evento
-        . director: director
-        . fecha publicacion
-        . actores: actor
-        . pais de origen
-        . año realizacion
+CLASES:
 
-    - tipo evento
-        . nombre
-        . descripcion
-    
-    - cuotas
-        . nro cuota
-        . valor 
-        + pagarCuota()
-        + caluclarMonto()
-    
-    - socio
-        . persona: persona
-        . cuota: cuota
+- persona
+    . nombre
+    . apellido
+    . email
+    . direccion
+    . telefono
+    . tipoDNI:tipoDNI
+    . nroDni
+    . ciudad:ciudad 
 
+- ciudad
+    . nombre
+    + registraCiudad(nombre)
+    + modificarCiudad(nombre)
 
-    - aporte mensual ( cuota que paga el cliente )
-        . socio: socio
-        . cuota:cuota
-        . estado
+- cliente
+    . persona:persona
+    . fechaAlta
+    . fechaModificacion
+    . socio:socio
+    . estado
+    + registrarCliente()
+    + modificarCliente()
+    + validarSocio(socio)
+    + cambiarEstadoSocio()
 
-    - boleto / entrada
-    - venta entrada
-    - detalle venta
-    - ticket
-    - tipo cliente
+- socio
+    . cuota:cuota
+    . fechaAlta
+    . fechaModificacion
+    . estado
+    + conocerEstadoSocio()
+    + cambiarEstadoSocio()
+    + verificarCuotas()
+
+- cuota
+    . nroCuota
+    . valor
+    . estado:estado
+    + calcularMonto()
+    + registrarPago()
+    + conocerEstado()
+
+- estado
+    . nombre
+    . descripcion
+    + crearEstado()
+    + modificarEstado()
 
