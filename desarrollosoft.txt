@@ -15,8 +15,6 @@ Si el cliente es socio y tiene sus cuotas al día, recibe un descuento del 5% en
 
 ## Requerimientos funcionales del sistema Municipalidad:
 
-
-
 1- Administrar eventos:
     1.1: Definir horarios
     1.2: Definir precios   
