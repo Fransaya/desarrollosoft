@@ -59,7 +59,7 @@ clases definidas:
     +getEvento()
     +setevento()
   
-cardinalidad: 
+
 Evento ->"1" Director
 Evento ->"1..*" ActoresPrincipales
 Evento ->"1" TipoEvento
@@ -71,6 +71,14 @@ Evento "1..*"<|--- Encargado
 Evento "1"<|--- Publicacion
 
 SalaEvento ->"1" Encargado
+
+
+note as N1
+  Todas las clases del diagrama contienen get, set
+  y constructores (ejemplos de clase: Director,TipoDeEvento, otras)
+  pero se han omitido para simplificar.
+end note
+
 
 
 Patrones utilizados:
