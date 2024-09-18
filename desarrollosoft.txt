@@ -39,4 +39,186 @@ Si el cliente es socio y tiene sus cuotas al día, recibe un descuento del 5% en
     5.0 - verificar disponibilidad de entrada para el evento seleccionado
     5.1 - Registrar nuevas ventas
     5.2 - calcular porcentaje de descuento a socios
-    5.2 - verificar estado de cuenta de socio
+    5.2 - verificar estado de cuenta de 
+
+
+## Clases del sistema Municipalidad:
+
+- persona
+    . nombre
+    . apellido
+    . email
+    . direccion
+    . telefono
+    . tipoDNI:tipoDNI
+    . nroDni
+    . ciudad:ciudad 
+    + conocerTipoDNI() 
+
+- ciudad
+    . nombre
+    + registraCiudad(nombre)
+    + modificarCiudad(nombre)
+
+- cliente
+    . persona:persona
+    . fechaAlta
+    . fechaModificacion
+    . socio:socio
+    . estado
+    + registrarCliente()
+    + modificarCliente()
+    + validarSocio()
+    + cambiarEstadoSocio()
+
+- socio
+    . cuota:cuota
+    . fechaAlta
+    . fechaModificacion
+    . estado
+    + conocerEstadoSocio()
+    + cambiarEstadoSocio()
+    + verificarCuotas()
+
+- cuota
+    . nroCuota
+    . valor
+    . estado:estado
+    + registrarPago()
+    + conocerEstado()
+
+- estado
+    . nombre
+    . descripcion
+    + crearEstado()
+    + modificarEstado()
+
+- evento
+        -nombre
+        -horario: horario
+        -actoresPrincipales: actoresPrincipales
+        -capacidad
+        -tipoEvento: tipoEvento
+        -director: director
+        -paisDeOrigen: PaisDeOrigen
+        ----------------------
+        +crear()
+        +modificar()
+        +mostrar()
+        +getTipoEvento()
+        +getDirector()
+        +getPaisDeOrigen()
+        +getActoresPrincipales()
+
+
+-actoresPrincipales
+    -nombre
+    -descripción
+    -----------------------
+    +getNombre()
+    +getDescripción()
+    +setNombre()
+    +SetDescripción()
+  
+-Director
+    -nombre
+    -descripción
+    -----------------------
+    +getNombre()
+    +getDescripción()
+    +setNombre()
+    +SetDescripción()
+  
+-TipoEvento
+    -nombre
+    -descripción
+    -----------------------
+    +getNombre()
+    +getDescripción()
+    +setNombre()
+    +SetDescripción()
+  
+-SalaEvento
+    -nombre
+    -localidad
+    -encargado: Encargado
+    -evento: Evento
+    -----------------------
+    +getNombre()
+    +getLocalidad()
+    +setNombre()
+    +SetLocalidad()
+    +getEncargado()
+    +setEncargado()
+    +getEvento()
+    +setevento()
+  
+- horario
+    . fecha
+    . horaInicio
+    . horaFin
+
+- paisOrigen
+    . nombre
+
+- ventaEntrada
+    . fechaVenta
+    . cliente:cliente
+    . total
+    + registrarVenta()
+    + conocerCliente()
+    + validarEstadoCliente()
+    + calcularTotal()
+
+- entrada
+    . evento:evento
+    . precio
+    + conocerEvento()
+
+- detalleVenta
+    . entrada:entrada
+    . cantidad
+    . descuento
+    . subtotal
+    + aplicarDescuento()
+    + conocerDisponibilidad()
+
+-Usuario:
+    .encargado:Encargado
+    .nombreUsuario  
+    .password
+    +registrarUsuario()
+    +modificarUsuario()
+    +validarUsuario()
+    +cambiarPassword()
+    +conocerEncargado()
+
+-Tipo dni
+    .nombre
+    .descripcion
+    +registrarTipoDni()
+    +modificarTipoDni()
+    +validarTipoDni()
+
+-Encargado
+    .persona:persona
+    .fechaAlta
+    .evento:Evento
+    .legajo
+    +registrarEncargado()
+    +modificarEncargado()
+    +validarEncargado()
+    +conocerPersona()
+    +registrarHorarios()
+    +registrarValorEntrada()
+    +conocerSalaEvento()
+
+-Publicacion
+    .evento:Evento
+    .fechaPublicacion
+    .descripcion
+    .añoRealizacion
+    +registrarPublicacion()
+    +modificarPublicacion()
+    +validarPublicacion()
+    +conocerEvento()
