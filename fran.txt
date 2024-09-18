@@ -9,6 +9,7 @@ CLASES:
     . tipoDNI:tipoDNI
     . nroDni
     . ciudad:ciudad 
+    + conocerTipoDNI() 
 
 - ciudad
     . nombre
@@ -23,7 +24,7 @@ CLASES:
     . estado
     + registrarCliente()
     + modificarCliente()
-    + validarSocio(socio)
+    + validarSocio()
     + cambiarEstadoSocio()
 
 - socio
@@ -39,7 +40,6 @@ CLASES:
     . nroCuota
     . valor
     . estado:estado
-    + calcularMonto()
     + registrarPago()
     + conocerEstado()
 
