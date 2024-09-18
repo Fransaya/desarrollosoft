@@ -12,3 +12,41 @@
     1.1 - ABM de socios / clientes. 
     3.1 - Calcular total adeudado
     3.1 - Mostrar estado de cuenta
+    
+-Usuario:
+    .encargado:Encargado
+    .nombreUsuario  
+    .password
+    +registrarUsuario()
+    +modificarUsuario()
+    +validarUsuario()
+    +cambiarPassword()
+    +conocerEncargado()
+-Tipo dni
+    .nombre
+    .descripcion
+    +registrarTipoDni()
+    +modificarTipoDni()
+    +validarTipoDni()
+-Engargado
+    .persona:persona
+    .fechaAlta
+    .evento:Evento
+    .legajo
+    +registrarEncargado()
+    +modificarEncargado()
+    +validarEncargado()
+    +conocerPersona()
+    +registrarHorarios()
+    +registrarValorEntrada()
+    +conocerSalaEvento()
+-Publicacion
+    .evento:Evento
+    .fechaPublicacion
+    .descripcion
+    .añoRealizacion
+    +registrarPublicacion()
+    +modificarPublicacion()
+    +validarPublicacion()
+    +conocerEvento()
+
