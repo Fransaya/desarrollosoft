@@ -1,47 +1,79 @@
 clases definidas:
 - evento
-        . fechaInicio
-        . fechaFin
-        . turno: turno ( uno a muchos )
-        . cantidadPersonas 
+        -nombre
+        -horario: horario
+        -actoresPrincipales: actoresPrincipales
+        -capacidad
+        -tipoEvento: tipoEvento
+        -director: director
+        -paisDeOrigen: PaisDeOrigen
         ----------------------
-        crear()
-        modificar()
-        mostrar()
-
-    - horarios
-        . horaInicio
-        . horaFin
-
-    - turno
-        . fecha, hora
-        . nombre
-
-    - entrada
-        . evento:evento
-        . precio
-
-    - persona
-        . nombre
-        . apellido
-        . tipoDoc
-        . nroDocumento
-        . fechaNacimiento
-        . telefono
-        . email
+        +crear()
+        +modificar()
+        +mostrar()
+        +getTipoEvento()
+        +getDirector()
+        +getPaisDeOrigen()
+        +getActoresPrincipales()
 
 
-    - usuario
-        . persona: persona
-        . rol usuario: rol Usuario
-        . estado
-        . alias
-        . password
+-actoresPrincipales
+    -nombre
+    -descripción
+    -----------------------
+    +getNombre()
+    +getDescripción()
+    +setNombre()
+    +SetDescripción()
+  
+-Director
+    -nombre
+    -descripción
+    -----------------------
+    +getNombre()
+    +getDescripción()
+    +setNombre()
+    +SetDescripción()
+  
+-TipoEvento
+    -nombre
+    -descripción
+    -----------------------
+    +getNombre()
+    +getDescripción()
+    +setNombre()
+    +SetDescripción()
+  
+-SalaEvento
+    -nombre
+    -localidad
+    -encargado: Encargado
+    -evento: Evento
+    -----------------------
+    +getNombre()
+    +getLocalidad()
+    +setNombre()
+    +SetLocalidad()
+    +getEncargado()
+    +setEncargado()
+    +getEvento()
+    +setevento()
+  
+cardinalidad: 
+Evento ->"1" Director
+Evento ->"1..*" ActoresPrincipales
+Evento ->"1" TipoEvento
+Evento ->"1" Horario
+Evento ->"1" PaisDeOrigen
+Evento "1"<|--- Entrada
+Evento "1..*"<|--- SalaEvento
+Evento "1..*"<|--- Encargado
+Evento "1"<|--- Publicacion
 
-    - rol usuario
-        . tipoUsuario 
-        . .
+SalaEvento ->"1" Encargado
 
-    - sesion
-       . fechaHoraInicio 
-       . fechaHoraFin
+
+Patrones utilizados:
+Transacción - DetalleDeTransacción : Venta - DetalleDeVenta
+
+    
